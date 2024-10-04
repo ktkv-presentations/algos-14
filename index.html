@@ -23,189 +23,367 @@
         <div class="reveal">
             <div class="slides">
                 <section>
-                    <h1>Beautiful presentations</h1>
-                    <h2>New features</h2>
-                    <ul>
-                        <li>Nerd icons </li>
-                        <li>
-                            <code class="js">
-                                (inline) => code("highlighting")
-                            </code>
-                        </li>
-                        <li>Automatic QR Code generation</li>
-                        <li>and much more!</li>
-                    </ul>
-                </section>
-                <section>
-                    <h1>CUSTOM TOKYONIGHT THEME</h1>
-                    <h2 class="fragment">THAT HAS</h2>
-                    <h3 class="fragment">MULTI</h3>
-                    <h4 class="fragment">LEVEL</h4>
-                    <h5 class="fragment">HEADING</h5>
-                    <h6 class="fragment">COLORS</h6>
-                    <h6>
-                        Thanks to this project
-                        <a
-                            href="https://github.com/tcmmichaelb139/obsidian-tokyonight">
-                            
-                        </a>
-                        for the colorscheme!
-                    </h6>
+                    <h1>Регулярные выражения</h1>
+                    <img
+                        data-type="qrcode"
+                        class="r-stretch"
+                        alt="https://ktkv-presentations.github.io/algos-14" />
                 </section>
                 <section>
                     <section>
-                        <h1>Tailwind CSS</h1>
-                        <div class="grid grid-cols-2 gap-8">
-                            <div>
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
-                            </div>
-                            <div>
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
-                            </div>
-                            <div class="col-span-2">
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
-                            </div>
-                        </div>
+                        <h1>RegExp magic</h1>
+                        <img
+                            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.tenor.com%2Fimages%2Fb18da32434d082e22c735f63c0cd8232%2Ftenor.gif&f=1&nofb=1&ipt=9d79da85c8d290356925b8740ba3366292631f0163b79ae33a2eff403a353bb2&ipo=images"
+                            alt="" />
                     </section>
                     <section>
-                        <h1>Custom classes</h1>
-                        <div class="grid grid-cols-3 gap-8">
-                            <div class="border-r">
-                                <h5>border-r</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                            <div class="border-o">
-                                <h5>border-o</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                            <div class="border-y">
-                                <h5>border-y</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                        </div>
+                        <pre><code class="python">
+text_with_digits = "Цена 120 рублей, а скидка составляет 30%"
+
+numbers = re.findall(r"\b\d+\b", text_with_digits)
+print(numbers)
+
+# ['120', '30']
+                        </code></pre>
+                    </section>
+                    <section>
+                        <pre><code class="python">
+text = "Свяжитесь с нами по почте support@example.com или admin@mydomain.org."
+
+emails = re.findall(r"[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+", text)
+print(emails)
+# ['support@example.com', 'admin@mydomain.org']
+                        </code></pre>
+                    </section>
+                    <section>
+                        <pre><code class="python">
+text = "Свяжитесь с нами по почте support@example.com или admin@mydomain.org."
+
+emails = re.findall(r"[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+", text)
+print(emails)
+# ['support@example.com', 'admin@mydomain.org']
+                        </code></pre>
                     </section>
                 </section>
                 <section>
-                    <section data-auto-animate>
-                        <h1>New code highlighting!</h1>
-                        <div>
-                            Now also has Tokyo Night
-                            <code>highlight.js</code>
-                            highlighting implementation
-                        </div>
-                        <pre><code data-trim data-noescape>
-var foo = {
-    bar: function () {
-             alert("Hello, World!");
-         }
-};	
-					</code></pre>
-                    </section>
-                    <section data-auto-animate>
-                        <h1>New code highlighting!</h1>
-                        <h5>Inline code highlighting is now also supported!</h5>
+                    <section>
+                        <h1>Регулярные выражения</h1>
+                        <h4>RegEx | RegExp | Regular Expression</h4>
                         <p>
-                            Just wrap your code with
-                            <code>&lt;code&gt;</code>
-                            tag and get highlighting like this
-                            <code class="js">
-                                const foo = () => {return bar}
-                            </code>
-                            !
+                            мощный инструмент для поиска, сопоставления и
+                            манипуляции текстом на основе заданных шаблонов
+                        </p>
+                        <p>
+                            Встречаются в таких языкам как
+                            <code>Python, Java, JavaScript, C#</code>
                         </p>
                     </section>
+                    <section data-auto-animate>
+                        <h1>Элементы регулярного выражения</h1>
+                        <h4>Литералы</h4>
+                        <ul>
+                            <li>
+                                Литералы представляют собой символы, которые
+                                совпадают с самими собой в строке.
+                            </li>
+                        </ul>
+                        <p>
+                            Регулярное выражения
+                            <code>cat</code>
+                            в подстроке
+                            <code>cat</code>
+                        </p>
+                    </section>
+                    <section data-auto-animate>
+                        <h1>Элементы регулярного выражения</h1>
+                        <h4>Метасимволы</h4>
+                        <p>
+                            специальные символы, имеющие особое значение в
+                            регулярных выражениях
+                        </p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="border-b">
+                                <code>.</code>
+                                <span>
+                                    - любой один символ (кроме символа новой
+                                    строки)
+                                </span>
+                            </div>
+                            <div class="border-b">
+                                <code>^</code>
+                                <span>- начало строки</span>
+                            </div>
+                            <div class="border-b">
+                                <code>$</code>
+                                <span>- конец строки</span>
+                            </div>
+                            <div class="border-b">
+                                <code>*</code>
+                                <span>
+                                    - 0 или больше вхождений предыдущего символа
+                                </span>
+                            </div>
+                        </div>
+                    </section>
+                    <section data-auto-animate>
+                        <h1>Элементы регулярного выражения</h1>
+                        <h4>Метасимволы</h4>
+                        <p>
+                            специальные символы, имеющие особое значение в
+                            регулярных выражениях
+                        </p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="border-b">
+                                <code>+</code>
+                                <span>
+                                    1 или больше вхождений предыдущего символа
+                                </span>
+                            </div>
+                            <div class="border-b">
+                                <code>?</code>
+                                <span>
+                                    - 0 или 1 вхождение предыдущего символа
+                                </span>
+                            </div>
+                            <div class="border-b">
+                                <code>|</code>
+                                <span>- логическое ИЛИ</span>
+                            </div>
+                            <div class="border-b">
+                                <code>()</code>
+                                <span>
+                                    – группировка символов или подвыражений
+                                </span>
+                            </div>
+                        </div>
+                    </section>
+                    <section data-auto-animate>
+                        <h1>Элементы регулярного выражения</h1>
+                        <h4>Примеры работы с элементами RegExp</h4>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="border-b">
+                                <code>c.t</code>
+                                <span>=> cat, cut, cot</span>
+                            </div>
+                            <div class="border-b">
+                                <code>ab*</code>
+                                <span>=> a, ab, abb, abbb...</span>
+                            </div>
+                            <div class="border-b">
+                                <code>[^0-9]</code>
+                                <span>=> любой символ, кроме цифр</span>
+                            </div>
+                            <div class="border-b">
+                                <code>cat|dog</code>
+                                <span>=> cat или dog</span>
+                            </div>
+                            <div style="grid-column: span 2" class="border-b">
+                                <code>+7.*,</code>
+                                <span>
+                                    => все номера российского региона из списка
+                                    через запятую
+                                </span>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h1>Элементы регулярного выражения</h1>
+                        <h4>Экранирование специальных символов</h4>
+                        <p>
+                            Чтобы эти символы воспринимались буквально, их нужно
+                            экранировать с помощью обратного слеша
+                        </p>
+                        <pre><code class="python">
+import re
+
+pattern = r"\."
+text = "В этом предложении есть точка."
+result = re.search(pattern, text)
+
+print(result)  # Вывод: re.Match object; span=(26, 27), match='.'
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h1>Предопределенные классы символов</h1>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="border-b">
+                                <code>\d</code>
+                                <span>- любая цифра</span>
+                            </div>
+                            <div class="border-b">
+                                <code>\D</code>
+                                <span>
+                                    - любой символ, не являющийся цифрой
+                                </span>
+                            </div>
+                            <div class="border-b">
+                                <code>\w</code>
+                                <span>
+                                    - любая буква, цифра или символ
+                                    подчеркивания
+                                </span>
+                            </div>
+                            <div class="border-b">
+                                <code>\W</code>
+                                <span>
+                                    - любой символ, не являющийся буквой, цифрой
+                                    или подчеркиванием
+                                </span>
+                            </div>
+                            <div class="border-b">
+                                <code>\s</code>
+                                <span>- любой пробельный символ</span>
+                            </div>
+                            <div class="border-b">
+                                <code>\S</code>
+                                <span>- любой непробельный символ</span>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h1>Якоря</h1>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="border-b">
+                                <code>^</code>
+                                <span>- начало строки</span>
+                            </div>
+                            <div class="border-b">
+                                <code>$</code>
+                                <span>- конец строки</span>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h1>жадные и ленивые квантификаторы</h1>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="border-b">
+                                <h4>Жадный</h4>
+                                <p>
+                                    Квантификаторы по умолчанию являются
+                                    жадными, то есть они захватывают как можно
+                                    больше символов
+                                </p>
+                                <code>a.*b</code>
+                                <span>
+                                    - на строке "aabbb" захватит всю строку
+                                    "aabbb"
+                                </span>
+                            </div>
+                            <div class="border-b">
+                                <h4>Ленивый</h4>
+                                <p>
+                                    квантификаторы захватывают как можно меньше
+                                    символов, для этого используется ? после
+                                    квантификатора
+                                </p>
+                                <code>a.*?b</code>
+                                <span>
+                                    - на строке "aabbb" захватит только "aab"
+                                </span>
+                            </div>
+                        </div>
+                    </section>
                 </section>
                 <section>
-                    <h1>Mermaid for beautiful diagrams!</h1>
-                    <div class="mermaid">
-                        <pre>
-						erDiagram
-    CUSTOMER ||--o{ ORDER : ""
-    CUSTOMER {
-        string name
-        string custNumber
-        string sector
-    }
-    ORDER ||--|{ LINE-ITEM : contains
-    ORDER {
-        int orderNumber
-        string deliveryAddress
-    }
-    LINE-ITEM {
-        string productCode
-        int quantity
-        float pricePerUnit
-    }
-    ORDER ||--|{ STUDENT : contains
-    STUDENT {
-        int orderNumber
-        string deliveryAddress
-    }
-						</pre
-                        >
-                    </div>
-                    <h4>
-                        Check documentation
-                        <a href="https://mermaid.js.org/config/usage.html">
-                            here
-                        </a>
-                        !
-                    </h4>
-                </section>
-                <section>
-                    <h1>Now supports Nerd font icons!</h1>
-                    <div>Nerdy project that adds icons to font itself</div>
-                    <h6>
-                        Checkout their site for icons like this
-                        <a href="https://www.nerdfonts.com/">󰖟</a>
-                        !
-                    </h6>
-                </section>
-                <section>
-                    <h1>Now supports automatic QRCode generation!</h1>
-                    <div>
-                        With GoQR you can just add data-type and alt attributes
-                        to your
-                        <code class="html">
-                            &lt;img alt="https://goqr.me/" data-type="qrcode" /
-                            &gt;
+                    <section>
+                        <h1>Применение регулярных выражений в Python</h1>
+                        <div class="border-b">
+                            В Python для работы с регулярными выражениями
+                            используется модуль
+                            <code>re</code>
+                        </div>
+                        <code class="python">
+                            import re re.match(r"Hello", arg2)
                         </code>
-                        tag!
-                    </div>
-                    <img
-                        class="r-stretch"
-                        alt="https://goqr.me/"
-                        data-type="qrcode" />
-                </section>
-                <section>
-                    <h1>New changes on the way!</h1>
+                        <p>
+                            <code>r</code>
+                            <span>
+                                - означает, что это регулярное выражение
+                            </span>
+                        </p>
+                        <p>
+                            <code>arg2</code>
+                            <span>
+                                - строка, к которой будет применяться регулярное
+                                выражение
+                            </span>
+                        </p>
+                    </section>
+                    <section data-auto-animate="">
+                        <h1>Примеры применения</h1>
+                        <div
+                            style="font-size: 1.4rem"
+                            class="grid grid-cols-1 gap-4">
+                            <div class="border-b">
+                                <code class="python">re.match()</code>
+                                <p>ищет соответствие в начале строки</p>
+                                <pre><code class="python">
+import re
+
+result = re.match(r"Hello", "Hello, World!")
+print(result.group())  # Hello
+                                </code></pre>
+                            </div>
+                            <div class="border-b">
+                                <code class="python">re.search()</code>
+                                <p>ищет первое соответствие в строке</p>
+                                <pre><code class="python">
+result = re.search(r"World", "Hello, World!")
+print(result.group())  # World
+                                </code></pre>
+                            </div>
+                        </div>
+                    </section>
+                    <section data-auto-animate="">
+                        <h1>Примеры применения</h1>
+                        <div
+                            style="font-size: 1.4rem"
+                            class="grid grid-cols-1 gap-4">
+                            <div class="border-b">
+                                <code class="python">re.findall()</code>
+                                <p>
+                                    возвращает список всех найденных совпадений
+                                </p>
+                                <pre><code class="python">
+result = re.findall(r"\d+", "The numbers are 12, 24, and 36")
+print(result)  # Вывод: ['12', '24', '36']
+                                </code></pre>
+                            </div>
+                            <div class="border-b">
+                                <code class="python">re.sub()</code>
+                                <p>замена всех вхождений в строке</p>
+                                <pre><code class="python">
+result = re.sub(r"\d+", "NUMBER", "The numbers are 12, 24, and 36")
+print(result)  # Вывод: The numbers are NUMBER, NUMBER, and NUMBER
+                                </code></pre>
+                            </div>
+                        </div>
+                    </section>
+                    <section data-auto-animate="">
+                        <h1>Примеры применения</h1>
+                        <div
+                            style="font-size: 1.4rem"
+                            class="grid grid-cols-1 gap-4">
+                            <div class="border-b">
+                                <code class="python">re.split()</code>
+                                <p>разделение строки по заданному шаблону</p>
+                                <pre><code class="python">
+result = re.split(r"\s+", "This is a test")
+print(result)  # Вывод: ['This', 'is', 'a', 'test']
+                                </code></pre>
+                            </div>
+                            <div class="border-b">
+                                <code class="python">re.fullmatch()</code>
+                                <p>проверка всей строки</p>
+                                <pre><code class="python">
+pattern = r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
+
+email = "test@example.com"
+result = re.fullmatch(pattern, email) # re.Match object
+                                </code></pre>
+                            </div>
+                        </div>
+                    </section>
                 </section>
             </div>
         </div>
@@ -396,4 +574,3 @@ var foo = {
         </script>
     </body>
 </html>
-
